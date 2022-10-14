@@ -14,19 +14,23 @@ html{
 }
 
 body, h1, h2, h3, h4, h5, h6, p, ol, ul {
-  margin: 0;
+margin: 0;
   padding: 0;
-  font-weight: normal;
-  font-size: 18px;
+
 
   display: flex;
   flex-direction: column;
-  justify-content: center;
-  align-items: center;
+  /* justify-content: center;
+  align-items: center; */
 }
 
 h1{
-  margin-right: 10rem;
+  margin-top: 0.7rem;
+  text-align: left;
+  color: hsla(0, 0%, 100%);
+  font-weight: bold;
+  font-size: 18px;
+
 }
 
 ol, ul {
@@ -40,8 +44,10 @@ margin: 7% 7% 1% 7%;
 
 }
 
-main{
-
+hr{
+  border: solid 1px;
+  color: #21334b;
+  margin-top: 0.8rem;
 }
 
 .card-text{
@@ -53,5 +59,82 @@ width: 18rem;
 height: 30rem;
   background-color: hsla(216, 50%, 16%);
   border-radius: 0.5rem;
+  margin: auto;
 
+}
+
+.main-text{
+  font-weight: 400;
+  margin-top: 0.8rem;
+  font-size: 15px;
+  color: #617997;
+
+}
+
+.price-days{
+  margin-top: 1.2rem;
+  display: flex;
+  flex-direction: row;
+  font-weight: 300;
+  font-size: 14px;
+}
+
+.eth{
+  display: block;
+  font-weight: bold;
+  color: #00FFF8;
+
+}
+
+.time-days{
+  display: flex;
+  flex-direction: row;
+  margin-left: 4rem;
+}
+
+.price{
+  text-align: center;
+  font-weight: bold;
+  color: #00FFF8;
+  margin-left: 0.5rem;
+}
+
+.days{
+margin-left: 0.5rem;
+  color: #617997;
+  font-weight: bold;
+}
+
+.photo-author{
+  display: flex;
+  flex-direction: row;
+margin-top: 0.8rem;
+}
+
+.avatar{
+  border-radius: 50%;
+  max-width: 12%;
+  margin: 0;
+  border: solid 1px;
+  color: hsla(0, 0%, 100%);
+}
+
+.author{
+  color: #617997;
+  font-weight: bold;
+  font-size: 14px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  margin-left: 0.8rem;
+
+
+}
+
+
+.jules{
+  color: hsla(0, 0%, 100%);
+  margin-left: 0.2rem;
+  color: #c0cdda;
 }
