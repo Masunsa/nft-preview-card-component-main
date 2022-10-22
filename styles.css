@@ -1,12 +1,18 @@
-.attribution { font-size: 11px; text-align: center; }
-.attribution a { color: #6D6F78; }
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
 
-html{
+.attribution a {
+  color: #6D6F78;
+}
+
+html {
   font-family: 'Outfit', sans-serif;
   box-sizing: border-box;
   font-size: 16px;
   background-color: hsla(217, 54%, 11%);
-    margin-top: 5%;
+  margin-top: 5%;
 }
 
 *, *:before, *:after {
@@ -14,22 +20,18 @@ html{
 }
 
 body, h1, h2, h3, h4, h5, h6, p, ol, ul {
-margin: 0;
+  margin: 0;
   padding: 0;
-
-
   display: flex;
   flex-direction: column;
-
 }
 
-h1{
+h1 {
   margin-top: 0.7rem;
   text-align: left;
   color: white;
   font-weight: bold;
   font-size: 18px;
-
 }
 
 ol, ul {
@@ -37,13 +39,12 @@ ol, ul {
 }
 
 img {
-max-width: 86%;
-border-radius: 0.5rem;
-margin: 7% 7% 1% 7%;
-
+  max-width: 86%;
+  border-radius: 0.5rem;
+  margin: 7% 7% 1% 7%;
 }
 
-hr{
+hr {
   border: solid 1px;
   color: #21334b;
   margin-top: 0.8rem;
@@ -53,30 +54,32 @@ a:hover {
   color: #00FFF8;
 }
 
-.card-text{
-margin: 1% 7% 1% 7%;
+.card-text {
+  margin: 1% 7% 1% 7%;
 }
 
-.card{
-width: 18rem;
-height: 30rem;
+.card {
+  width: 18rem;
+  height: 30rem;
   background-color: hsla(216, 50%, 16%);
   border-radius: 0.5rem;
   margin: auto;
-
-    box-shadow: 1px 12px 25px 30px #0c1729;
-
+  box-shadow: 1px 12px 25px 30px #0c1729;
 }
 
-.main-text{
+.card img{
+  width: 100%;
+  height: 100%;
+}
+
+.main-text {
   font-weight: 400;
   margin-top: 0.8rem;
   font-size: 15px;
   color: #617997;
-
 }
 
-.price-days{
+.price-days {
   margin-top: 1.2rem;
   display: flex;
   flex-direction: row;
@@ -84,39 +87,38 @@ height: 30rem;
   font-size: 14px;
 }
 
-.eth{
+.eth {
   display: block;
   font-weight: bold;
   color: #00FFF8;
-
 }
 
-.time-days{
+.time-days {
   display: flex;
   flex-direction: row;
   margin-left: 4rem;
 }
 
-.price{
+.price {
   text-align: center;
   font-weight: bold;
   color: #00FFF8;
   margin-left: 0.5rem;
 }
 
-.days{
-margin-left: 0.5rem;
+.days {
+  margin-left: 0.5rem;
   color: #617997;
   font-weight: bold;
 }
 
-.photo-author{
+.photo-author {
   display: flex;
   flex-direction: row;
-margin-top: 0.8rem;
+  margin-top: 0.8rem;
 }
 
-.avatar{
+.avatar {
   border-radius: 50%;
   max-width: 12%;
   margin: 0;
@@ -124,7 +126,7 @@ margin-top: 0.8rem;
   color: hsla(0, 0%, 100%);
 }
 
-.author{
+.author {
   color: #617997;
   font-weight: bold;
   font-size: 14px;
@@ -133,23 +135,58 @@ margin-top: 0.8rem;
   justify-content: center;
   align-items: center;
   margin-left: 0.8rem;
-
-
 }
 
-
-.jules{
+.jules {
   color: hsla(0, 0%, 100%);
   margin-left: 0.2rem;
   color: #c0cdda;
 }
 
-.equilibrium-link{
+.equilibrium-link {
   text-decoration: none;
   color: #EAF6F6;
 }
 
-.wyvern{
+.wyvern {
   text-decoration: none;
   color: #EAF6F6;
+}
+
+.container{
+
+  position: relative;
+  display: flex;
+  justify-content: center;
+
+}
+
+.container:hover .image {
+  opacity: 0.3;
+}
+
+.container:hover .middle {
+  opacity: 1;
+}
+
+.top-image{
+  opacity: 0;
+
+}
+
+.top-image:hover{
+opacity: 1;
+
+height: 40px;
+width: 40px;
+}
+
+.middle{
+  opacity: 1;
+  position: absolute;
+  text-align: center;
+  margin: auto;
+  margin-top: 7rem;
+  width: 100%;
+
 }
